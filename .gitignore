@@ -1,0 +1,30 @@
+# CMake build artifacts
+/cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+.idea/                # CLion's project configuration directory
+*.iml                 # IntelliJ module files
+*.ipr                 # IntelliJ project files
+*.iws                 # IntelliJ workspace files
+*.iml.old             # Old IntelliJ module files
+
+
+/SimpleEstudyProject  # Your compiled executable (if directly in project root)
+*.exe                 # Windows executables
+*.dll                 # Windows dynamic libraries
+*.lib                 # Windows static libraries
+*.so                  # Linux shared libraries
+*.dylib               # macOS dynamic libraries
+*.a                   # Static libraries (Linux/macOS)
+*.o                   # Object files (usually handled by CMakeFiles/, but good to be explicit)
+*.obj                 # Windows object files
+
+
+.DS_Store             # macOS desktop services store
+.Trashes              # macOS trash

@@ -18,11 +18,11 @@ int main() {
     std::string hostname = "your_ssh_server_ip_or_hostname";
     std::string username = "your_username";
     std::string password = "your_password";
-    int port;
+    int port = 22;
 
     ssh_options_set(session, SSH_OPTIONS_HOST, hostname.c_str());
     ssh_options_set(session, SSH_OPTIONS_USER, username.c_str());
-    ssh_options_set(session, SSH_OPTIONS_PORT, port);
+    ssh_options_set(session, SSH_OPTIONS_PORT, &port);
 
 
     rc = ssh_connect(session);
